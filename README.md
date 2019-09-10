@@ -1,8 +1,5 @@
 ### docker-jenkinsci
 
-### Docker Baseimage
-
-
 ### Base image
 Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 
