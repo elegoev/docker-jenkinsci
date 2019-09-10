@@ -1,2 +1,2 @@
-FROM nginx:1.9.8
+FROM jenkins/jenkins:lts
 MAINTAINER Urs Voegele
