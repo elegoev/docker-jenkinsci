@@ -24,4 +24,6 @@ docker build --rm -t elegoev/jenkinsci .
 echo -e "${GREEN}######################${NC}"
 echo -e "${GREEN}# >>>> run image     #${NC}"
 echo -e "${GREEN}######################${NC}"
-docker run -d --restart=unless-stopped --name $CONTAINERNAME -p 8080:8080 -p 50000:50000 elegoev/jenkinsci
+docker run -d --restart=unless-stopped --name $CONTAINERNAME \
+           -p 8080:8080 -p 50000:50000 \
+           elegoev/jenkinsci
