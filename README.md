@@ -6,7 +6,6 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 ### References
 - [Developing Groovy Scripts to Automate Jenkins](https://brokenco.de/2017/07/24/groovy-automation-for-jenkins.html)
 - [Jenkins updating init.groovy.d files in a docker container](https://stackoverflow.com/questions/45818327/jenkins-updating-init-groovy-d-files-in-a-docker-container)
-- [Example Dockerfile](https://github.com/docksal/service-jenkins/blob/master/Dockerfile)
 
 ### Ports & Access
 | Application          | URL                         |
