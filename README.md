@@ -1,3 +1,5 @@
+https://img.shields.io/github/v/release/elegoev/docker-jenkinsci?style=plastic
+
 ### docker-jenkinsci
 
 ### Base image
