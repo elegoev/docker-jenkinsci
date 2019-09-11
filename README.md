@@ -1,4 +1,4 @@
-https://img.shields.io/github/v/release/elegoev/docker-jenkinsci?style=plastic
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/elegoev/docker-jenkinsci?style=plastic)
 
 ### docker-jenkinsci
 
