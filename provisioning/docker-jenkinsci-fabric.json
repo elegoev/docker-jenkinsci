@@ -7,6 +7,7 @@
     "vb_hostname":           "docker",
     "vb_guest_os":           "ubuntu",
     "vb_group":              "vagrant-docker-fabric",
+    "vb_dnshostresolve":     true,
     "vb_network": [
       {
         "ip":      "171.16.1.51",

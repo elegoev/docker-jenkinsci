@@ -15,6 +15,12 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 | Jenkins              | http://localhost:8080       |
 | Jenkins Blue Ocean   | http://localhost:8080/blue  |
 
+### Docker Commands
+|                      | command                                            |
+|----------------------|----------------------------------------------------|
+| build image          | docker build --rm -t elegoev/jenkinsci .           |
+| shell in container   | docker exec -it \<container id\> bash              |
+
 ### Versioning
 Repository follows sematic versioning  [![](https://img.shields.io/badge/semver-2.0.0-green.svg)](http://semver.org)
 
