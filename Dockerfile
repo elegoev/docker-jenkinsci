@@ -1,10 +1,10 @@
 FROM jenkins/jenkins
 MAINTAINER Urs Voegele
 
-# User root
-# RUN apt-get update -y \
-#     && apt-get install -y sudo snapd
-# USER jenkins
+User root
+RUN apt-get update -y \
+   && apt-get install -y jq
+USER jenkins
 
 # Skip initial setup.
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false" \

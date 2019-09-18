@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.3.0
+**Implemented enhancements:**
+- Dockerfile: jq v1.5.1 added
+
 ## 1.2.0
 **Implemented enhancements:**
 - Dockerfile: jfrog client v1.28.0 installed
