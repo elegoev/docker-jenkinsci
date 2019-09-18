@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.0
+**Implemented enhancements:**
+- Dockerfile: jfrog client v1.28.0 installed
+
 ## 1.1.0
 **Implemented enhancements:**
 - Dockerfile: helm client v2.14.3 installed
