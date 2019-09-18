@@ -1,6 +1,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/elegoev/docker-jenkinsci?style=plastic)
 
-### docker-jenkinsci
+### [docker-jenkinsci](https://github.com/elegoev/docker-jenkinsci)
 
 ### Base image
 Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
