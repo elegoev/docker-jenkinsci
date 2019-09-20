@@ -20,6 +20,11 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 - [Jenkins updating init.groovy.d files in a docker container](https://stackoverflow.com/questions/45818327/jenkins-updating-init-groovy-d-files-in-a-docker-container)
 - [JFrog Client](https://www.jfrog.com/confluence/display/CLI/CLI+for+JFrog+Artifactory)
 
+### Installed Tools
+- Helm client v2.14.3
+- JFrog client v1.28.0
+- jq v1.5.1
+- Docker client v18.09.7
 
 ### Ports & Access
 | Application          | URL                         |

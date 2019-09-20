@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.4.0
+**Implemented enhancements:**
+- Dockerfile: Docker client v18.09.7 added
+
 ## 1.3.0
 **Implemented enhancements:**
 - Dockerfile: jq v1.5.1 added

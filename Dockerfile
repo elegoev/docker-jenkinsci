@@ -4,7 +4,7 @@ MAINTAINER Urs Voegele
 User root
 RUN apt-get update -y \
    && apt-get install -y jq
-USER jenkins
+# USER jenkins
 
 # Skip initial setup.
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false" \
@@ -24,9 +24,9 @@ COPY ./data/*.groovy /usr/share/jenkins/ref/init.groovy.d/
 # Install standard plugins
 COPY ./data/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
-
-# Change User 'root'
-User root
+#
+# # Change User 'root'
+# User root
 
 # Install Helm & JFrog Client
 ENV HELM_VERSION="v2.14.3"
@@ -39,5 +39,13 @@ RUN curl -s -L https://storage.googleapis.com/kubernetes-helm/${HELM_FILENAME} |
    && chmod +x jfrog \
    && mv jfrog /bin/jfrog
 
-# Change User 'root'
-User jenkins
+
+# Install Docker Client
+ENV DOCKER_URL="https://download.docker.com/linux/static/stable/x86_64"
+ENV DOCKER_VERSION="18.09.7"
+VOLUME /certs
+RUN curl -fsSL $DOCKER_URL/docker-$DOCKER_VERSION.tgz | \
+         tar zxvf - --strip 1 -C /usr/bin docker/docker
+#
+# # Change User 'root'
+# User jenkins
