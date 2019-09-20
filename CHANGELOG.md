@@ -1,6 +1,6 @@
 # Change Log
 
-## 1.4.0
+## 1.4.1
 **Implemented enhancements:**
 - Dockerfile: Docker client v18.09.7 added
 
