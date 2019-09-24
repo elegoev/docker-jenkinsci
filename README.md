@@ -29,6 +29,7 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 - JFrog client v1.28.0
 - jq v1.5.1
 - Docker client v18.09.7
+- [Installed Jenkins Plugins](https://github.com/elegoev/docker-jenkinsci/blob/master/data/plugins.txt)
 
 ### Ports & Access
 | Application          | URL                         |
