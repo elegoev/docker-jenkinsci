@@ -15,6 +15,26 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 1. Create release on GitHub
 1. Image with new release (tag), will be created on DockerHub
 
+### Environment Variables
+| Application          | URL                                          |
+|----------------------|----------------------------------------------|
+| JENKINS_EMAIL        | e-mail-adresse for sysadmin                  |
+| JENKINS_URL          | jenkins URL                                  |
+| JENKINS_USER         | jenkins sysadmin                             |
+| JENKINS_PASS         | password for sysadmin                        |
+| CASC_JENKINS_CONFIG  | config directory for 'configuration as code' |
+
+    docker run -d --restart=unless-stopped --name $CONTAINERNAME \
+           -p 8080:8080 -p 50000:50000 \
+           -v jenkins:/var/jenkins_home \
+           -v /var/run/docker.sock:/var/run/docker.sock \
+           -e JENKINS_EMAIL="admin@localhost" \
+           -e JENKINS_URL="http://localhost:8080/" \
+           -e JENKINS_USER="admin" \
+           -e JENKINS_PASS="admin" \
+           -e CASC_JENKINS_CONFIG="/var/jenkins_home/casc-config" \
+           elegoev/jenkinsci
+
 ### References
 - [Developing Groovy Scripts to Automate Jenkins](https://brokenco.de/2017/07/24/groovy-automation-for-jenkins.html)
 - [Jenkins updating init.groovy.d files in a docker container](https://stackoverflow.com/questions/45818327/jenkins-updating-init-groovy-d-files-in-a-docker-container)
