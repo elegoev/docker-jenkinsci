@@ -1,0 +1,8 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - string:
+          id: "test_secret"
+          scope: GLOBAL
+          secret: "mypassword"

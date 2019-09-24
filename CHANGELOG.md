@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.5.1
+**Implemented enhancements:**
+- Dockerfile: Jenkins Plugin configuration-as-code-support added
+
 ## 1.5.0
 **Implemented enhancements:**
 - Dockerfile: Bugfixes
