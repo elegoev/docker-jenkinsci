@@ -104,3 +104,4 @@ blueocean-i18n:1.19.0
 blueocean-autofavorite:1.2.4
 blueocean:1.19.0
 slack:2.32
+configuration-as-code-support:1.18

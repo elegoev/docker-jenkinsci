@@ -19,6 +19,10 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 - [Developing Groovy Scripts to Automate Jenkins](https://brokenco.de/2017/07/24/groovy-automation-for-jenkins.html)
 - [Jenkins updating init.groovy.d files in a docker container](https://stackoverflow.com/questions/45818327/jenkins-updating-init-groovy-d-files-in-a-docker-container)
 - [JFrog Client](https://www.jfrog.com/confluence/display/CLI/CLI+for+JFrog+Artifactory)
+- [Getting started with Jenkins Configuration as Code](https://www.praqma.com/stories/start-jenkins-config-as-code/)
+- [GitHub configuration-as-code-plugin](https://github.com/jenkinsci/configuration-as-code-plugin/tree/master/demos)
+- [Jenkins CLI ](https://jenkins.io/doc/book/managing/cli/#using-the-cli-client)
+- [Using Docker-in-Docker for your CI or testing environment](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
 
 ### Installed Tools
 - Helm client v2.14.3
