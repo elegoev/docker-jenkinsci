@@ -2,18 +2,8 @@
 
 ### [docker-jenkinsci](https://github.com/elegoev/docker-jenkinsci)
 
-### Base image
+### Base Image
 Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
-
-### Build image
-1. Create vagrantbox `vagrant up`
-1. Login `vagrant ssh`
-1. Change directory `cd /vagrant`
-1. Build & run image `./build_image.sh`
-
-### Create New Version (DockerHub)
-1. Create release on GitHub
-1. Image with new release (tag), will be created on DockerHub
 
 ### Environment Variables
 | Application          | URL                                          |
@@ -24,7 +14,8 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 | JENKINS_PASS         | password for sysadmin                        |
 | CASC_JENKINS_CONFIG  | config directory for 'configuration as code' |
 
-    docker run -d --restart=unless-stopped --name $CONTAINERNAME \
+### Run Command
+    docker run -d --restart=unless-stopped --name jenkinsci \
            -p 8080:8080 -p 50000:50000 \
            -v jenkins:/var/jenkins_home \
            -v /var/run/docker.sock:/var/run/docker.sock \
@@ -56,12 +47,6 @@ Used base image [jenkins/jenkins](https://hub.docker.com/r/jenkins/jenkins)
 |----------------------|-----------------------------|
 | Jenkins              | http://localhost:8080       |
 | Jenkins Blue Ocean   | http://localhost:8080/blue  |
-
-### Docker Commands
-|                      | command                                            |
-|----------------------|----------------------------------------------------|
-| build image          | docker build --rm -t elegoev/jenkinsci .           |
-| shell in container   | docker exec -it \<container id\> bash              |
 
 ### Versioning
 Repository follows sematic versioning  [![](https://img.shields.io/badge/semver-2.0.0-green.svg)](http://semver.org)
